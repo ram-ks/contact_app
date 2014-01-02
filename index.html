@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<link rel="stylesheet" href="css/screen.css">
+</head>
+<body>
+<!-- <input id= "subject" type="text" placeholder="Write a word"></input>
+<button id="add">Search twitts</button> -->
+	<div id="contacts">
+		<header>
+			<div id="filter">
+				<label for="">Show Me:</label>
+			</div>
+		</header>
+		<script id="contact-template" type="text/template">
+			<img src="<%= photo %>" alt="<%= name %>" />
+            <h1><%= name %><span><%= type %></span></h1>
+            <div><%= address %></div>
+            <dl>
+                <dt>Tel:</dt><dd><%= tel %></dd>
+                <dt>Email:</dt><dd><a href="mailto:<%= email %>"><%= email %></a></dd>
+            </dl>
+		</script>
+	</div>	
+	<script text="text/javascript" src="javascript/jquery-1.9.2.js"></script>
+	<script text="text/javascript" src="javascript/json2.js"></script>	
+	<script text="text/javascript" src="javascript/underscore.js"></script>
+	<script text="text/javascript" src="javascript/backbone.js"></script>
+	<script text="text/javascript" src="javascript/script.js"></script>
+</body>
+</html>
